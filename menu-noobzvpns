@@ -13,9 +13,6 @@ BG_BLU="\033[44;1m" # BG BIRU
 Xark='\e[0m'
 GREN="\033[0;32m"
 clear
-noobtls="EMzhKvWX2V7h3pHP5ez/k2i1XMhdPh6WVetdSik3kr0f3ynS23Mmfh5NGzbqCme3KqV+1w0AXMwr5G4BL79FI2WDZ+hGmIaghQ+vzEkFlE4lgn3fP5qzJ7k5CTitksAnO3YWNDx1IdvPtwgn/2YEOlBKE4UmV7LMFlg+mWOqWIkFSbK9j2tIqFlAzJDLw+U7IKlPt5AZt/JAolrw9HEv5NN2892l9HwnK2MZcf8AfwCHhcOJLsiOJZOTCP+ywEz2iGXzg40aIdHpcAXJP6Zk+yWj23km5S9yUjq04enD6n2gVkYuA0dNgrprDnWwSH9VgNHyDBbBtwUTsSo7kWbrXgJhk+YS3Hr3I0sCHet6wNGwcEIBdrFqMEyJOd3pFZiO9TBR0xKn76P4A85WjbttuqeXrOAGb50U4Ru/5PKB8C8111w8fd7Djdl+w+DcUjLIEv/t38zX1QAhuE2IvIG3KJTSNFFYVoyvqYbbLCZSBw1f6neAdkYwUffzMVmcagTHqHvHrHWUBgCxH2g1cdhGxKDfoztC0J4mLde64nh+f9Yb9+8YuudG9W69+mhVxhoVSxJZrJ4yNq4JJ48sDjOgYCOXbwZdfuwLs+Y5wjqLqxa9YxXRrJoVIA=="
-noobws="EJrIfen5qGdVYT5k7bQgnZQPpd5vVPkchArH8YQlK0rceZ7rgssiVPWGid2nI5mWEBaCBAUXmCO9lqIlEkGWQEy6jqWc4fKhtS5aWomNVX1/Hgd8p0fzQe2aTtMY6Md/J4hd9ssK7VZLpcPL74i5zkFeBGX+iUuT3Zgexuje5LUdkWzusa/sHgU3kPnbAZIEWO26ghc7GVjxJGbJKcDRnf2ufhV5iHkyI1NoXQlx+b5hFfjVAFEpZWyAGla1DR7Zn7Tp3G/GPqUEVrJ0SFClBMhVOv40/SwIdTrqLeDcxjStCd/14TDXNdlEHQbsvRd2zfBKoCTnWRKmvx2kmFRP+zy9KzkW6EemJt5zIIgYwirBpX/loDpHzfblaUGL2+WN/0LRD/TInoK2WX33WM+JDgG/XiWyy5h3xgAyAvgx4rLtuYX+m/kgx+p+CxBpZFJ1CZ09ThaPRjsoO6aG+6edEHZTmk9cxjGgXW/ou5wL8XcFt9xwKBYyLR4t+JD+8o9kxZdc+ZJsi0QJq6gw5NqfiDB6OKWYcYdpXvIrOa+mpc2RDa/7Ra4RVg1tLsRQ4+IxJ6gQRm1T3ydkW71UKcW9kYvSyhPWpZYg5GkjZI5YGRl9e4Y8ujk="
-function baris_panjang() {
   echo -e "${BlueCyan} ———————————————————————————————————————${Xark}"
 }
 
@@ -78,13 +75,9 @@ echo -e "\e[93;1m Username \e[0m   : $username "
 echo -e "\e[93;1m Password \e[0m   : $password "
 echo -e "\e[93;1m Expiry in\e[0m   : $days "
 echo -e "\e[93;1m Domain   \e[0m   : $(cat /etc/xray/domain) "
-echo -e "\e[92;1m Port WS  \e[0m   : 80,8880,8080 "
-echo -e "\e[92;1m Port Tls \e[0m   : 443,8443"
+echo -e "\e[92;1m Port WS  \e[0m   : 8080 "
+echo -e "\e[92;1m Port Tls \e[0m   : 8443"
 echo
-baris_panjang
-echo " Link WS  : ${noobws}"
-baris_panjang
-echo " Link Tls : ${noobtls}"
 baris_panjang
 echo
 read -p "Back To Menu"
